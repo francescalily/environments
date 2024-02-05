@@ -4,7 +4,7 @@ import GUI from 'lil-gui'
 
 const textureLoader = new THREE.TextureLoader()
 
-const gui = new GUI()
+// const gui = new GUI()
 const global = {}
 
 const canvas = document.querySelector('canvas.webgl')
@@ -13,16 +13,16 @@ const scene = new THREE.Scene()
 scene.backgroundBlurriness = 0
 scene.backgroundIntensity = 1
 
-gui.add(scene, 'backgroundBlurriness').min(0).max(1).step(0.001)
-gui.add(scene, 'backgroundIntensity').min(0).max(10).step(0.001)
+// gui.add(scene, 'backgroundBlurriness').min(0).max(1).step(0.001)
+// gui.add(scene, 'backgroundIntensity').min(0).max(10).step(0.001)
 
 
-global.envMapIntensity = 1
-gui
-    .add(global, 'envMapIntensity')
-    .min(0)
-    .max(10)
-    .step(0.001)
+// global.envMapIntensity = 1
+// gui
+//     .add(global, 'envMapIntensity')
+//     .min(0)
+//     .max(10)
+//     .step(0.001)
     
     const cubeTextureLoader = new THREE.CubeTextureLoader()
     const environmentMap = cubeTextureLoader.load([

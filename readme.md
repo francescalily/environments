@@ -1,7 +1,7 @@
 # Environment Setup
 
 ## Setup
-Run this followed commands:
+Run the following commands:
 
 ``` bash
 # Install dependencies (only the first time)
